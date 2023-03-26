@@ -51,6 +51,9 @@ pub fn find_items<'a>(
         };
         if matches {
             vec.push((key, value));
+			if vec.len()>9{
+				break
+			}
         }
     }
     vec
